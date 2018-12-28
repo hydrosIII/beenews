@@ -13,7 +13,12 @@ from bs4 import BeautifulSoup
 def beenews():
   # cache to update once a day only (thanks, Google captcha)
 
-  r = requests.get('https://www.google.com/search?hl=en&gl=us&tbm=nws&authuser=0&q=bees&oq=bees&gs_l=news-cc.3..43j0l10j43i53.5224.5630.0.5735.4.4.0.0.0.0.76.173.3.3.0...0.0...1ac.1.XVE1F-CxNM8')
+## English
+#  r = requests.get('https://www.google.com/search?hl=en&gl=us&tbm=nws&authuser=0&q=bees&oq=bees&gs_l=news-cc.3..43j0l10j43i53.5224.5630.0.5735.4.4.0.0.0.0.76.173.3.3.0...0.0...1ac.1.XVE1F-CxNM8')
+
+## Spanish
+  r = requests.get('https://www.google.com/search?hl=es&gl=mx&tbm=nws&authuser=0&q=abeja&oq=abeja&gs_l=news-cc.3..43j0l10j43i53.5224.5630.0.5735.4.4.0.0.0.0.76.173.3.3.0...0.0...1ac.1.XVE1F-CxNM8%27')
+#### You can add a language, it is just a Google search, change the ? parameters
   curated_headlines = {}
   soup = BeautifulSoup(r.text, "lxml")
 

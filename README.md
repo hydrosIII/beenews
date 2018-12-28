@@ -16,3 +16,4 @@ Maybe parallax scrolling, maybe some bee particles flying aroung in the backgrou
 ### Thank you for making this. It has enriched my life.
 You're welcome. That's why I do what I do.
 
+The app is in python2
